@@ -17,10 +17,18 @@
 .not-only__title {
     width: rem(310px);
     font-size: rem(44px);
+    letter-spacing: 0;
+    color: $color-white;
 }
 
 .not-only__description {
     margin: rem(42px) 0;
+}
+
+.not-only__button {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
 }
 
 .not-only__image__wrapper {
