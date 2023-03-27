@@ -25,6 +25,12 @@
     margin: rem(42px) 0;
 }
 
+.not-only__button {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
 .not-only__image__wrapper {
     width: rem(698px);
     height: rem(728px);
