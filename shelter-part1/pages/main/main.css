@@ -12,6 +12,11 @@
   font-style: normal;
   font-display: swap;
 }
+.our-friends, .about {
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+}
+
 :root {
   font-size: 16px;
 }
@@ -38,7 +43,7 @@ body {
   font-size: 2.1875rem;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: #292929;
 }
 
 .default-p {
@@ -160,6 +165,7 @@ body {
   width: 19.375rem;
   font-size: 2.75rem;
   letter-spacing: 0;
+  color: #ffffff;
 }
 
 .not-only__description {
@@ -177,8 +183,6 @@ body {
 
 .about {
   background-color: #ffffff;
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
 }
 
 .about__wrapper {
@@ -202,7 +206,6 @@ body {
 
 .about__title {
   width: 23.125rem;
-  color: #292929;
   margin: 0.875rem 0;
 }
 
@@ -210,6 +213,130 @@ body {
   color: #4C4C4C;
   margin-top: 1.5625rem;
   margin-bottom: 0;
+}
+
+.our-friends {
+  background-color: #F6F6F6;
+}
+
+.our-friends__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-friends__title {
+  width: 25rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.our-friends__slider {
+  margin: 3.6875rem 0;
+}
+
+.our-friends__link {
+  text-decoration: none;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 3.3125rem;
+}
+
+.slider-button {
+  width: 3.25rem;
+  height: 3.25rem;
+  background-image: url("../../assets/icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0.125rem solid #F1CDB3;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slider-button:hover:not(.slider-button:disabled) {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+}
+.slider-button:disabled {
+  border-color: #545454;
+  opacity: 0.3;
+}
+
+.slider__button-left {
+  order: 1;
+}
+
+.slider__button-right {
+  order: 3;
+  transform: rotate(180deg);
+}
+
+.slider__cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 5.625rem;
+  order: 2;
+}
+
+.card {
+  width: 16.875rem;
+  min-height: 27.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.5625rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card__image {
+  width: 16.875rem;
+  height: 16.875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pet-katrine {
+  background: url("../../assets/images/pets-katrine.webp");
+}
+
+.pet-jennifer {
+  background: url("../../assets/images/pets-jennifer.webp");
+}
+
+.pet-woody {
+  background: url("../../assets/images/pets-woody.webp");
+}
+
+.card_title {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 1.875rem 0;
+}
+
+.card__button {
+  background-color: #ffffff;
+  border: 2px solid #F1CDB3;
+  padding: 0.8125rem 2.6875rem;
+}
+.card__button:hover {
+  border-color: #FDDCC4;
 }
 
 /*# sourceMappingURL=main.css.map */

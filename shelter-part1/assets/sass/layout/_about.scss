@@ -1,7 +1,6 @@
 .about {
     background-color: $color-white;
-    padding-top: rem(80px);
-    padding-bottom: rem(100px);
+    @extend %blocksPaddings;
 }
 
 .about__wrapper {
@@ -25,7 +24,6 @@
 
 .about__title {
     width: rem(370px);
-    color: $color-dark;
     margin: rem(14px) 0;
 }
 
