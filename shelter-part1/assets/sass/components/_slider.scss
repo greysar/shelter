@@ -13,12 +13,12 @@
     background-color: transparent;
     border: rem(2px) solid $color-main-orange;
     border-radius: rem(100px);
-    cursor: pointer;
     transition: 0.3s;
 
     &:hover:not(&:disabled) {
         background-color: $color-main-orange-hover;
         border-color: $color-main-orange-hover;
+        cursor: pointer;
     }
 
     &:disabled {
