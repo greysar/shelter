@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia.woff2") format("woff2"), url("../../assets/fonts/Georgia.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/ArialMT.woff2") format("woff2"), url("../../assets/fonts/ArialMT.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  user-select: none;
+}
+
+.container {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.title-h2 {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.default-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 160%;
+  color: #CDCDCD;
+}
+
+.button-main {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  background: #F1CDB3;
+  border-radius: 6.25rem;
+  border: none;
+  outline: none;
+  color: #292929;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.9375rem 2.8125rem;
+}
+.button-main:hover {
+  background: #FDDCC4;
+}
+
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  background: url("../../assets/images/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+  padding-top: 1.875rem;
+}
+
+.main-logo__title {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  margin: 0;
+}
+
+.main-logo__description {
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-top: 0.5625rem;
+}
+
+.header__nav {
+  padding-bottom: 3px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 27.6875rem;
+  list-style-type: none;
+  padding: 0;
+}
+.nav__list a {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 160%;
+  color: #F1CDB3;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+  opacity: 0.7;
+  padding-bottom: 0.25rem;
+  cursor: default;
+}
+.nav__list a:hover:not(.link__active) {
+  opacity: 1;
+  cursor: pointer;
+}
+.nav__list .link__active {
+  opacity: 1;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.not-only {
+  display: flex;
+  justify-content: space-between;
+}
+
+.not-only__left-block {
+  width: 28.75rem;
+  height: 20.125rem;
+  margin-top: 15.8125rem;
+}
+.not-only__left-block * {
+  margin: 0;
+}
+
+.not-only__title {
+  width: 19.375rem;
+  font-size: 2.75rem;
+}
+
+.not-only__description {
+  margin: 2.625rem 0;
+}
+
+.not-only__image__wrapper {
+  width: 43.625rem;
+  height: 45.5rem;
+  background: url("../../assets/images/start-screen-puppy.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5.6875rem;
+}
+
+/*# sourceMappingURL=main.css.map */
