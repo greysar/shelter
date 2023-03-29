@@ -1,0 +1,64 @@
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-group-1;
+    user-select: none;
+}
+
+.container {
+    width: rem(1280px);
+    margin: 0 auto;
+    padding: 0 rem(40px);
+}
+
+.title-h2 {
+    font-family: $font-group-2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(35px);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark;
+}
+
+.default-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(15px);
+    line-height: 160%;
+    color: $color-white-dark;
+}
+
+.button-main {
+    font-family: $font-group-2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(17px);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    background: $color-main-orange;
+    border-radius: rem(100px);
+    border: none;
+    outline: none;
+    color: #292929;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: rem(15px) rem(45px);
+
+    &:hover {
+        background: $color-main-orange-hover;
+    }
+}
+
+@media (max-width: 1280px) {
+    body {
+        width: fit-content;
+    }
+}
