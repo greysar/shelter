@@ -1,7 +1,7 @@
 .donation {
     @extend %blocksPaddings;
     background: $color-grey-light;
-    padding-bottom: 87px;
+    padding-bottom: rem(87px);
 }
 
 .donation__wrapper {
@@ -87,5 +87,62 @@
 
     .donation__right-block {
         order: 1;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .donation {
+        padding-bottom: rem(29.5px);
+    }
+
+    .donation__wrapper {
+        gap: rem(29px);
+    }
+
+    .donation__image {
+        width: rem(260px);
+        height: rem(135px);
+        background-size: cover;
+    }
+
+    .donation__right-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donation__title {
+        width: 68vw;
+        text-align: center;
+    }
+
+    .donation__bank-name {
+        font-size: rem(15px);
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .donation__card-number {
+        font-size: rem(15px);
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        padding: rem(13px) rem(15px) rem(13px) rem(60px);
+        margin-bottom: rem(9px);
+
+        &::before {
+            background-size: cover;
+            top: 9px;
+        }
+    }
+
+    .donation__description {
+        width: rem(280px);
+        font-size: rem(12px);
+        line-height: rem(18px);
+        text-align: justify;
+        letter-spacing: 0;
     }
 }

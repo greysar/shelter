@@ -27,3 +27,9 @@
 .our-friends__link {
     text-decoration: none;
 }
+
+@media (max-width: 585px) {
+    .our-friends__title {
+        width: 90vw;;
+    }
+}

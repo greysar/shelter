@@ -1,6 +1,7 @@
 :root {
     font-size: 16px;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 * {
@@ -10,6 +11,7 @@
 body {
     font-family: $font-group-1;
     user-select: none;
+    overflow-x: hidden;
 }
 
 .container {
@@ -66,5 +68,31 @@ body {
 @media (max-width: 920px) {
     .container {
         padding: 0 rem(30px);
+    }
+}
+
+@media (max-width: 535px) {
+    .container {
+        padding: 0 rem(14px);
+    }
+
+    .title-h2 {
+        width: 70vw;
+        font-size: 7.76vw;
+        letter-spacing: 0.06em;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 319px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 262px) {
+    :root {
+        font-size: 10px;
     }
 }

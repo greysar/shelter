@@ -72,12 +72,14 @@
 .contacts__email {
     &::before {
         background: url('../../assets/icons/icon-mail.svg');
+        background-size: cover;
     }
 }
 
 .contacts__phone {
     &::before {
         background: url('../../assets/icons/icon-phone.svg');
+        background-size: cover;
     }
 }
 
@@ -96,6 +98,7 @@
         height: rem(32px);
         background: url('../../assets/icons/icon-location-pin.svg');
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
         top: rem(-5px);
@@ -139,7 +142,7 @@
     }
 }
 
-@media (max-width: 799px){
+@media (max-width: 799px) {
     .footer {
         padding-top: rem(13px);
     }
@@ -150,5 +153,96 @@
 
     .footer__right-block {
         gap: rem(58px);
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        padding-top: rem(13px);
+    }
+
+    .footer__wrapper {
+        gap: rem(27px);
+    }
+
+    .footer__right-block {
+        display: flex;
+        flex-direction: column;
+        gap: rem(5px);
+    }
+}
+
+@media (max-width: 379px) {
+    .footer {
+        padding-top: rem(30px);
+    }
+
+    .footer__wrapper {
+        gap: rem(10px);
+    }
+
+    .footer__right-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(1px);
+    }
+
+    .footer__contacts-block,
+    .footer__locations-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__locations-block {
+        width: rem(320px);
+        gap: rem(10px);
+    }
+
+    .footer-title {
+        font-size: rem(25px);
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        margin: 0;
+    }
+
+    .locations__title {
+        padding-bottom: rem(10px);
+        padding-bottom: rem(30px);
+    }
+
+    .contacts__email {
+        padding-bottom: rem(48px);
+    }
+
+    .contacts__phone {
+        padding-bottom: rem(43px);
+    }
+
+    .first-pin {
+        padding-left: rem(52px);
+
+        &::before {
+            top: rem(7px);
+            left: rem(10px);
+        }
+    }
+
+    .second-pin {
+        padding-left: rem(11px);
+
+        &::before {
+            left: rem(-31px);
+        }
+    }
+
+    .footer__pet-image {
+        width: rem(260px);
+        height: rem(269px);
+        background-size: cover;
     }
 }
