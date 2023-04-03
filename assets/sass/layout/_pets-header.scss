@@ -1,7 +1,9 @@
 .header {
     height: rem(120px);
     padding-top: 0;
+}
 
+.main-logo {
     a {
         display: block;
         text-decoration: none;
@@ -26,5 +28,17 @@
     .link__active {
         opacity: 1;
         border-bottom: 3px solid $color-main-orange;
+    }
+}
+
+.header__burger-button {
+    background-color: $color-black;
+
+    &::before {
+        background-color: $color-black;
+    }
+
+    &::after {
+        background-color: $color-black;
     }
 }
