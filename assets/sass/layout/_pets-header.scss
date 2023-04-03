@@ -1,7 +1,9 @@
 .header {
     height: rem(120px);
     padding-top: 0;
+}
 
+.main-logo {
     a {
         display: block;
         text-decoration: none;
@@ -20,11 +22,23 @@
     a {
         opacity: 0.8;
         color: $color-dark-1;
-        padding-bottom: rem(1px);
+        padding-bottom: rem(3px);
     }
 
     .link__active {
         opacity: 1;
         border-bottom: 3px solid $color-main-orange;
+    }
+}
+
+.header__burger-button {
+    background-color: $color-black;
+
+    &::before {
+        background-color: $color-black;
+    }
+
+    &::after {
+        background-color: $color-black;
     }
 }
