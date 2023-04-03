@@ -115,6 +115,21 @@ body {
     font-size: 10px;
   }
 }
+@media (max-width: 200px) {
+  :root {
+    font-size: 8px;
+  }
+}
+@media (max-width: 165px) {
+  :root {
+    font-size: 6px;
+  }
+}
+@media (max-width: 119px) {
+  :root {
+    font-size: 4px;
+  }
+}
 .first-screen {
   display: flex;
   flex-direction: column;
@@ -154,7 +169,7 @@ body {
 }
 
 .header__nav {
-  padding-bottom: 3px;
+  padding-bottom: 0.1875rem;
 }
 
 .nav__list {
@@ -185,7 +200,7 @@ body {
 }
 .nav__list .link__active {
   opacity: 1;
-  border-bottom: 3px solid #F1CDB3;
+  border-bottom: 0.1875rem solid #F1CDB3;
 }
 
 .header__burger-link {
