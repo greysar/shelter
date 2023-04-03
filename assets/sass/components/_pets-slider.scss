@@ -31,6 +31,10 @@
     }
 }
 
+.slider__button-number {
+    background-color: $color-main-orange;
+}
+
 .slider__cards-block {
     width: 100%;
     display: flex;
@@ -71,4 +75,74 @@
 
 .pet-freddie {
     background: url('../../assets/images/pets-freddie.webp');
+}
+
+@media (max-width: 1275px) {
+    .slider__cards-block {
+        justify-content: center;
+        align-items: center;
+        gap: rem(25px);
+    }
+
+    .slider__card {
+        width: 20%;
+    }
+
+    .card__image {
+        height: rem(270px);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .d-768_none {
+        display: none;
+    }
+
+    .our-friends__slider {
+        gap: rem(33px);
+        margin-top: rem(29px);
+        margin-bottom: rem(35px);
+    }
+
+    .slider__cards-block {
+        width: rem(580px);
+        gap: rem(30px) rem(40px);
+    }
+
+    .slider__card {
+        width: rem(270px);
+        height: rem(435px);
+    }
+
+    .card_title {
+        margin: rem(30px) 0;
+    }
+}
+
+@media (max-width: 648px) {
+    .d-648_none {
+        display: none;
+    }
+
+    .our-friends__slider {
+        gap: rem(35px);
+        margin-top: rem(41px);
+        margin-bottom: rem(1px);
+    }
+
+    .slider__cards-block {
+        width: rem(274px);
+        gap: rem(30px);
+    }
+
+    .slider__card {
+        width: rem(270px);
+        height: rem(435px);
+    }
+
+    .slider__navigation {
+        gap: rem(10px);
+    }
 }

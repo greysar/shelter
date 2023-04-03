@@ -267,7 +267,7 @@ body {
 .nav__list a {
   opacity: 0.8;
   color: #545454;
-  padding-bottom: 0.0625rem;
+  padding-bottom: 0.1875rem;
 }
 .nav__list .link__active {
   opacity: 1;
@@ -557,6 +557,10 @@ body {
   opacity: 0.4;
 }
 
+.slider__button-number {
+  background-color: #F1CDB3;
+}
+
 .slider__cards-block {
   width: 100%;
   display: flex;
@@ -598,6 +602,63 @@ body {
   background: url("../../assets/images/pets-freddie.webp");
 }
 
+@media (max-width: 1275px) {
+  .slider__cards-block {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+  }
+  .slider__card {
+    width: 20%;
+  }
+  .card__image {
+    height: 16.875rem;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 1200px) {
+  .d-768_none {
+    display: none;
+  }
+  .our-friends__slider {
+    gap: 2.0625rem;
+    margin-top: 1.8125rem;
+    margin-bottom: 2.1875rem;
+  }
+  .slider__cards-block {
+    width: 36.25rem;
+    gap: 1.875rem 2.5rem;
+  }
+  .slider__card {
+    width: 16.875rem;
+    height: 27.1875rem;
+  }
+  .card_title {
+    margin: 1.875rem 0;
+  }
+}
+@media (max-width: 648px) {
+  .d-648_none {
+    display: none;
+  }
+  .our-friends__slider {
+    gap: 2.1875rem;
+    margin-top: 2.5625rem;
+    margin-bottom: 0.0625rem;
+  }
+  .slider__cards-block {
+    width: 17.125rem;
+    gap: 1.875rem;
+  }
+  .slider__card {
+    width: 16.875rem;
+    height: 27.1875rem;
+  }
+  .slider__navigation {
+    gap: 0.625rem;
+  }
+}
 .footer {
   padding-top: 2.5rem;
   background: url("../../assets/images/noise_transparent.webp"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
