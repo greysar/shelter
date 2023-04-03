@@ -67,3 +67,9 @@
         border-bottom: 3px solid $color-main-orange;
     }
 }
+
+@media (max-width: 767px) {
+    .header__nav {
+        display: none;
+    }
+}

@@ -22,7 +22,6 @@
 
 .donation__right-block {
     width: rem(380px);
-
 }
 
 .donation__title {
@@ -71,4 +70,22 @@
     font-size: rem(12px);
     line-height: rem(18px);
     color: $color-grey-dark;
+}
+
+@media (max-width: 999px) {
+    .donation__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: rem(47px);
+    }
+
+    .donation__image {
+        order: 2;
+    }
+
+    .donation__right-block {
+        order: 1;
+    }
 }

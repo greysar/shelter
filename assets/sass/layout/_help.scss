@@ -85,3 +85,18 @@
     color: $color-dark-1;
     margin: 0;
 }
+
+@media (max-width: 1110px) {
+    .help__icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(55px) rem(60px);
+        margin-top: rem(60px);
+    }
+
+    .help__icon {
+        width: rem(170px);
+        height: rem(113px);
+    }
+}
