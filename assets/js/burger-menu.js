@@ -17,7 +17,7 @@ NAV.addEventListener('click', (e) => {
 })
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 768) {
         closeBurgerMenu();
     }
 })
@@ -40,12 +40,14 @@ NAV_LIST.addEventListener('animationend', () => {
 
 NAV_LINKS.forEach(item => {
     item.addEventListener('click', (e) => {
-        e.preventDefault();
-        showBurgerMenu();
+        if (window.innerWidth < 768) {
+            e.preventDefault();
+            showBurgerMenu();
 
-        setTimeout(() => {
-            location.href = item.getAttribute('href');
-        }, 400)
+            setTimeout(() => {
+                location.href = item.getAttribute('href');
+            }, 400)
+        }
     })
 })
 
