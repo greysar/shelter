@@ -83,6 +83,10 @@ body {
   background: #FDDCC4;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 100%;
@@ -202,6 +206,22 @@ body {
 }
 
 @media (max-width: 767px) {
+  @keyframes burgerOpenRotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes burgerCloseRotation {
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
   .header__burger-link {
     display: flex;
     align-items: center;
@@ -210,6 +230,7 @@ body {
     font-size: 0;
     text-decoration: none;
     cursor: pointer;
+    z-index: 1;
   }
   .header__burger-button {
     display: block;
@@ -251,6 +272,14 @@ body {
     transform: rotate(45deg);
     top: 0;
   }
+  .burger-open {
+    animation: burgerOpenRotation 0.3s;
+    transform: rotate(-90deg);
+  }
+  .burger-close {
+    animation: burgerCloseRotation 0.3s;
+    transform: rotate(0deg);
+  }
   .header__nav {
     display: none;
   }
@@ -259,6 +288,74 @@ body {
   .header {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+@keyframes menuOpen {
+  from {
+    right: -rem(320px);
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes menuClose {
+  from {
+    right: 0;
+  }
+  to {
+    right: -rem(320px);
+  }
+}
+.burger-menu {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.burger-menu .nav__list {
+  width: 20rem;
+  min-width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5625rem;
+  background-color: #292929;
+  position: absolute;
+  right: -20rem;
+  top: 0;
+  margin: 0;
+}
+.burger-menu .nav__list li:first-child {
+  margin-top: 15.5625rem;
+}
+.burger-menu .nav__list a {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 160%;
+  padding-bottom: 0.4375rem;
+}
+
+.nav__list_open {
+  animation: menuOpen 0.3s;
+}
+
+.nav__list_opened-position {
+  right: 0 !important;
+}
+
+.nav__list_close {
+  animation: menuClose 0.3s;
+}
+
+@media (max-width: 320px) {
+  .nav__list {
+    width: 100% !important;
   }
 }
 .header {
@@ -297,6 +394,10 @@ body {
 }
 .header__burger-button::after {
   background-color: #000000;
+}
+
+.burger-menu .nav__list {
+  background-color: #ffffff;
 }
 
 .our-friends {
