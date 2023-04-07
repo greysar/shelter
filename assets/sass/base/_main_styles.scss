@@ -54,9 +54,17 @@ body {
     transition: 0.3s;
     padding: rem(15px) rem(45px);
 
-    &:hover {
-        background: $color-main-orange-hover;
+    @media screen and (min-width: 480px) {
+        &:hover {
+            background: $color-main-orange-hover;
+        }
     }
+
+    &:active {
+        background-color: $color-main-orange-hover;
+        border-color: $color-main-orange-hover;
+    }
+
 }
 
 .overflow-hidden {

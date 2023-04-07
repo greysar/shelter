@@ -13,7 +13,7 @@ BURGER_BUTTON.addEventListener('click', (e) => {
 })
 
 NAV.addEventListener('click', (e) => {
-    if (e.target.classList.contains('nav')) showBurgerMenu();
+    if (e.target.classList.contains('nav') && window.innerWidth < 768) showBurgerMenu();
 })
 
 window.addEventListener('resize', () => {
