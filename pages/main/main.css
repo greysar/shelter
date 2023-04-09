@@ -1402,6 +1402,18 @@ body {
     background-size: cover;
   }
 }
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animation-scale {
+  animation: scaleUp 0.5s;
+}
+
 .modal-window {
   width: 100vw;
   height: 100vh;
@@ -1446,12 +1458,13 @@ body {
   width: 31.25rem;
   height: 31.25rem;
   object-fit: contain;
+  align-self: center;
 }
 
 .popup__right-block {
   width: 21.9375rem;
   min-height: 22.625rem;
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .popup__title {
@@ -1529,7 +1542,7 @@ body {
   .popup__right-block {
     width: 16.3125rem;
     min-height: 18.9375rem;
-    margin-top: 0.6875rem;
+    padding: 0.6875rem;
   }
   .popup__title {
     margin-top: 0;

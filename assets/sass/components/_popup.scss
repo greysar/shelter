@@ -1,3 +1,17 @@
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation-scale {
+    animation: scaleUp 0.5s;
+}
+
 .modal-window {
     width: 100vw;
     height: 100vh;
@@ -43,12 +57,13 @@
     width: rem(500px);
     height: rem(500px);
     object-fit: contain;
+    align-self: center;
 }
 
 .popup__right-block {
     width: rem(351px);
     min-height: rem(362px);
-    margin-top: rem(16px);
+    padding: rem(16px);
 }
 
 .popup__title {
@@ -129,7 +144,7 @@
     .popup__right-block {
         width: rem(261px);
         min-height: rem(303px);
-        margin-top: rem(11px);
+        padding: rem(11px);
     }
 
     .popup__title {
