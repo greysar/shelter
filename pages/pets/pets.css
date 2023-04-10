@@ -1241,6 +1241,12 @@ body {
   font-family: "Arial", sans-serif;
   font-weight: 700;
 }
+@media screen and (max-width: 479px) {
+  .popup__button-close {
+    border-color: #FDDCC4;
+    background-color: #FDDCC4;
+  }
+}
 
 .button__hover {
   border-color: #FDDCC4;
