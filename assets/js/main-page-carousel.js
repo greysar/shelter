@@ -111,7 +111,7 @@ function createCards(indexes, arr, targetParentClass) {
                 if (i == 2) {
                     addClass = 'd-1000px-none'
                 }
-                let cardTemplate = `<div class="slider__card card ${addClass}">
+                let cardTemplate = `<div class="slider__card card ${addClass}" data-card-id="${arr[index].name.toLowerCase()}">
                                     <img src="${arr[index].img}" alt="Pet ${arr[index].name} picture" class="card__image"></img>
                                      <!-- /.card__image -->
                                      <h3 class="card_title">${arr[index].name}</h3>

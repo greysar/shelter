@@ -85,6 +85,14 @@
     animation: step-in-right 0.5s;
 }
 
+.moving-right-fast {
+    animation: step-in-left 0.2s;
+}
+
+.moving-left-fast {
+    animation: step-in-right 0.2s;
+}
+
 .slider__slide-item {
     min-width: rem(990px);
     min-height: rem(435px);
