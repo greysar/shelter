@@ -121,6 +121,11 @@
     font-size: rem(20px);
     font-family: $font-group-1;
     font-weight: 700;
+
+    @media screen and (max-width: 479px) {
+        border-color: $color-main-orange-hover;
+        background-color: $color-main-orange-hover;
+    }
 }
 
 .button__hover {
