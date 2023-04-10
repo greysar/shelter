@@ -30,7 +30,7 @@
 
 .popup {
     width: rem(900px);
-    min-height: (500px);
+    min-height: rem(500px);
     display: flex;
     justify-content: flex-start;
     gap: rem(29px);
@@ -119,6 +119,7 @@
     top: rem(-52px);
     right: rem(-42px);
     font-size: rem(20px);
+    font-family: $font-group-1;
     font-weight: 700;
 }
 
