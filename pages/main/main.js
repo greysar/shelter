@@ -1,0 +1,1 @@
+location.href = 'https://rolling-scopes-school.github.io/greysar-JSFEPRESCHOOL2024Q2/shelter/pages/main/index.html';
